@@ -1,0 +1,7 @@
+schemaVersion: '1.0'
+projectId: '<project-id>'
+components: []
+# Pour chaque composant créé, renseigner :
+# componentId, technology, type, name, status, version,
+# l1Path, l2Path, artifactPaths, dependencies.
+# Ne jamais inventer de composants ou de dépendances.

@@ -1,0 +1,19 @@
+schemaVersion: '1.1'
+projectId: '<project-id>'
+methodologyVersion: '0.8.0-candidate'
+configPath: 'PROJECT_CONFIG.yaml'
+context:
+  L0:
+    state: 'docs/CURRENT_STATE.md'
+    decisions: 'docs/DECISIONS.md'
+    componentIndex: 'components/index.yaml'
+  componentMemory:
+    L1: 'components/<technology>/<componentId>/STATE.md'
+    L2: 'components/<technology>/<componentId>/HISTORY.md'
+publication:
+  operationalPaths:
+    - 'docs/CURRENT_STATE.md'
+    - 'components/index.yaml'
+    - 'components/'
+  approvalRequiredPaths:
+    - 'docs/DECISIONS.md'

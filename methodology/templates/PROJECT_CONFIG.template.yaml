@@ -1,0 +1,6 @@
+schemaVersion: '1.0'
+projectId: '<project-id>'
+solutionName: '<solution-name>'
+powerFxLocale: '<fr-FR-or-en-US>'
+# Remplacer ce marqueur uniquement après confirmation de la langue de Studio.
+# La langue de l'éditeur ne détermine pas automatiquement les séparateurs YAML sérialisés.
