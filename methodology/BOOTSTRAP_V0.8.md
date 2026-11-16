@@ -57,6 +57,9 @@ Après chaque création, relire le chemin sur la branche cible et vérifier cont
 ## Reprise d'un projet existant
 Charger d'abord le manifeste historique et ses documents L0. Pour les anciens manifestes qui classent SPECIFICATIONS/ARCHITECTURE en L1 et TESTS/ERROR_LOG en L2, conserver leur interprétation historique jusqu'à migration approuvée. Ne pas traiter ces chemins comme une mémoire par composant sans transformation explicite.
 
+## Résolution des références et reprise cohérente
+Les chemins du manifeste et de l'index sont relatifs à `workspaces/<projectId>/`. Les liens Markdown sont relatifs au document qui les contient : `specifications/X.md` depuis `docs/CURRENT_STATE.md` désigne `docs/specifications/X.md`. En cas d'échec, consulter l'arborescence de la branche cible avant d'annoncer une absence ou de reconstruire un fichier. Recouper `CURRENT_STATE.md`, `DECISIONS.md`, l'index et les mémoires L1/L2 ; signaler tout état périmé sans confondre artefact enregistré et intégration Studio.
+
 ## Mode DEGRADED
 En absence d'accès GitHub, l'assistant peut analyser les sources et rédiger les artefacts dans la conversation, mais doit signaler l'absence de persistance, ne pas inventer de commit et ne pas créer un autre dépôt.
 

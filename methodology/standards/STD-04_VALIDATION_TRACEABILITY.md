@@ -20,6 +20,7 @@ Chaque campagne de recette conserve :
 
 ## Règles
 - Un résultat communiqué par l'utilisateur est un test déclaré, sauf preuve instrumentée.
+- Une erreur hypothétique ou simulée n'est pas un échec Studio observé. Enregistrer sa provenance et sa nature sans l'inventer comme incident réel.
 - Ne pas déduire une conformité fonctionnelle de la seule réussite de l'import YAML.
 - Après modification, identifier les tests à rejouer ; les résultats antérieurs restent attachés à l'ancienne version.
 - Publier les résultats opérationnels dans le workspace, sous réserve des autorisations et de la réussite de l'écriture.

@@ -13,6 +13,6 @@ La V0.8 est une **candidate en cours de validation**, non une version déployée
 - [STD-09](STD-09_COMPONENT_MEMORY.md) : mémoire L0/L1/L2 par composant et santé du contexte.
 - [STD-10](STD-10_MICROSOFT_KNOWLEDGE.md) : expertise Microsoft à la demande.
 
-[Instructions communes V0.8](../instructions/CHATGPT_PROJECT_INSTRUCTIONS_V0.8_CANDIDATE.txt) · [Décisions V0.8](../V0.8_DECISIONS.md)
+[Instructions communes V0.8](../instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt) · [Décisions V0.8](../V0.8_DECISIONS.md)
 
 Aucune migration des workspaces historiques n'est implicite. Les anciennes instructions sont conservées pour traçabilité.

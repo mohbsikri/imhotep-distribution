@@ -123,3 +123,66 @@ G01 ne valide pas la découverte effective d'un dépôt privé. Vérifier les dr
 
 ## T05 - Publication du ZIP par connecteur GitHub
 Statut initial : BLOQUE (agent a propose PowerShell sans tester le transfert des contenus UTF-8 aux operations GitHub). Reprise : verifier une publication native des 20 fichiers, idealement en commit unique, puis comparer les empreintes distantes. Ne pas considerer la disponibilite des outils comme preuve de reussite : test reel requis.
+
+## Campagne de stabilisation sur distribution privée — 16/11/2026
+Les scénarios historiques de ce document concernent principalement `mohbsikri/power-platform-ai-methodology` / `candidate/v0.8` / `v08-bootstrap-sandbox` et ne constituent pas à eux seuls la recette du dépôt privé de travail `mohbsikri/imhotep-pp-core` ni de la distribution publique `mohbsikri/imhotep-distribution`.
+
+Périmètre courant : `workspaces/imhotep-bootstrap-sandbox/` (`fr-FR`) et composant `scrBatchPriorityDemo` version `0.1.0-draft`, enregistré mais non testé dans Studio. Aucun résultat Studio ou Dataverse ne doit être inféré des contrôles GitHub.
+
+| ID | Vérification de non-régression | Preuve attendue | Statut |
+|---|---|---|---|
+| S01 | Résolution du lien `docs/specifications/RM_TEST_STOCK_REFERENCE.md` depuis L0 | Document retrouvé sans fausse absence | À tester dans nouveau chat |
+| S02 | Confrontation `CURRENT_STATE`, `DECISIONS` et index | Composant draft reconnu et décisions non rouvertes | À tester dans nouveau chat |
+| S03 | Reprise de `scrBatchPriorityDemo` avec L1/L2 | État non testé, aucune erreur Studio inventée | À tester dans nouveau chat |
+| S04 | Génération Canvas et diagnostic | YAML complet, pré-vol, locale et sérialisation distinguées | À tester dans Studio |
+| S05 | Publication d'un composant et reprise | Commit, index et L1/L2 cohérents, aucun écrasement | À tester dans nouveau chat |
+| S06 | Vérification des liens de documentation et identité des dépôts | Références existantes et dépôts non confondus | Relecture statique requise |
+| S07 | Comparaison source métier et architecture proposée | Décisions validées préservées, conflits sourcés | À tester dans nouveau chat |
+
+La validation finale exige une revue indépendante de la branche, la recette conversationnelle et les tests Studio lorsque requis. Ne pas promouvoir automatiquement sur `main`.
+
+
+## Consolidation express de la stabilisation — 16/11/2026 (état cumulatif)
+
+**Source de vérité pour cette campagne :** dépôt `mohbsikri/imhotep-pp-core`, branche `stabilization/v0.8-audit-20261116`. Les entrées B/A/I/G/T05 et les états S01–S07 précédents sont des **traces historiques** de contextes différents ; leurs statuts ne sont pas des verdicts actualisés de la présente branche. Ne pas les effacer ni les considérer comme exécutés à nouveau.
+
+### Corrections cumulées sur la branche
+
+| Domaine | Publication | Niveau de vérification |
+|---|---|---|
+| S01–S03 : chemins, contexte, mémoire L0/L1/L2 | `8b58081`, `6f0f4f1`, `2c2bdf3` | Relecture documentaire et scénarios antérieurs ; pas de nouvelle reprise indépendante dans cette consolidation |
+| S04 : Source Code Canvas, PA1001/PA2101 | `087625b`, `71eef0b` | Collage et affichage réels rapportés par le développeur ; conventions publiées dans STD-02/06 ; compatibilité universelle non démontrée |
+| S05 : publication cohérente en un commit | `0e0b921`, `71eef0b` | Procédure STD-09 et publication atomique observée |
+| S06 : références et décisions historiques | `a940284` | Correction publiée ; plan de recette historique conservé avec clarification présente |
+| S07 : arbitrages et sources métier | `6f0f4f1`, `2c2bdf3` | Règles documentaires publiées ; pas de nouvelle recette métier |
+| Documentation Microsoft avant génération | `71eef0b` | Règle STD-10 publiée ; comportement autonome en nouveau chat non testé |
+| Dataflows Power Platform | `71eef0b` | STD-02/06 et instructions enrichis ; aucune exécution de Dataflow |
+
+### Contrôles légers de clôture
+
+| Contrôle | Résultat | Limite |
+|---|---|---|
+| C01 — Cohérence Canvas | **Conforme statiquement** : instructions, STD-02 et STD-06 imposent `Screens:`, contrôles enfants et distinction Power Fx Studio/YAML ; causes connues PA1001/PA2101 explicitées | Aucun nouveau collage Studio dans cette revue |
+| C02 — Couverture Dataflows | **Conforme statiquement** : type Power Platform/Fabric distingué ; Power Query M, sources, destinations, actualisation, dépendances, sécurité et pré-vol présents | Aucun Dataflow créé ou rafraîchi ; comportement autonome en nouveau chat non testé |
+| C03 — Publication GitHub | **Réussi** : commit `71eef0b4c0d90b4f47e07dbedf2bf8c7603ae1f4`, quatre fichiers méthodologiques, HEAD vérifié | Ne constitue pas une validation d'exécution Power Platform |
+
+**Écart documentaire restant, non bloquant pour l'usage de la branche :** le workspace `scrBatchPriorityDemo` indique encore « bouton non testé », alors que le développeur a ensuite rapporté son fonctionnement. Ne pas réécrire L1/L2 sans opération de capitalisation dédiée ; ne pas présenter les fichiers comme reflétant cette preuve plus récente.
+
+**Verdict :** corrections méthodologiques consolidées, **recette statique allégée satisfaisante**, recette autonome dans un nouveau chat et tests Power Platform réels supplémentaires non exécutés. Ne pas promouvoir vers `main` sans décision explicite. Les scénarios R01–R10 de la proposition externe restent un plan, non une campagne exécutée.
+
+## Test final ciblé — scrCommandesDemo (16/11/2026)
+
+Source : compte rendu et confirmations explicites du développeur, dans un autre chat Power Apps Studio ; cette section est une **preuve utilisateur déclarée**, non une inspection indépendante de Studio ni une lecture d'un artefact `scrCommandesDemo` sur GitHub.
+
+| Contrôle | Résultat confirmé | Limite |
+|---|---|---|
+| Collage de l'écran Source Code YAML | Réussi | Version Studio et YAML exact non archivés ici |
+| Affichage des contrôles | Réussi | Pas de contrôle exhaustif de toutes les propriétés |
+| Formatage du montant (`lblRowCommandeMontant`) | Erreur observée, correction appliquée et validée par le développeur | Deux variantes de masque avaient été proposées ; variante exacte appliquée non précisée |
+| Initialisation locale des commandes | Réussi : trois commandes affichées, confirmé par le développeur | Aucune connexion Dataverse |
+| Tri chronologique | Réussi : `CMD-003`, `CMD-002`, `CMD-001`, confirmé par le développeur | Aucun test de dates identiques ou valeurs nulles |
+| Réinitialisation sans doublons | Non testé | Ne pas déclarer la recette exhaustive |
+| Consultation préalable des standards et de Microsoft Learn | Non démontrée par le compte rendu fourni | Comportement autonome à vérifier séparément si nécessaire |
+| Écriture GitHub pendant le test | Aucune selon le compte rendu externe | Non auditée indépendamment |
+
+**Décision de recette :** intégration Canvas et parcours principal validés sur retour utilisateur ; anomalie de formatage capitalisée dans STD-02/06. La recette est **fonctionnelle principale réussie, non exhaustive**. Cette validation n'autorise ni fusion vers `main` ni certification générale des formats Power Fx.

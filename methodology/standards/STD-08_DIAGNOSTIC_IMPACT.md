@@ -5,6 +5,7 @@ Version : 0.6.0-candidate
 Erreur d'import, de formule, d'affichage, de données ou échec d'un scénario STD-05.
 
 ## Procédure
+0. **Qualifier la provenance** : distinguer erreur réellement observée, erreur simulée, hypothèse de test et problème détecté statiquement ; ne jamais transformer une simulation en incident Studio confirmé dans L2.
 1. **Constater** : version exacte du livrable, scénario, étapes de reproduction, attendu/observé, message et capture ou trace si fournis.
 2. **Qualifier** : bloquant ou non ; erreur syntaxique, référence, données, permission, interface, règle métier, performance ou cause inconnue.
 3. **Formuler des hypothèses** : distinguer fait confirmé, cause probable et possibilité non testée. Ne pas multiplier les modifications sans lien avec le symptôme.

@@ -21,7 +21,7 @@ Les niveaux sont des granularités de chargement de mémoire, **pas** des catég
 Chaque composant de l'index a un `componentId` stable, `technology`, `type`, `name`, `status`, `version`, `l1Path`, `l2Path`, `artifactPaths` et `dependencies` connues. Une dépendance inconnue reste inconnue, jamais inventée. Les références d'incidents transversaux pointent vers une seule trace canonique.
 
 ## Chargement, provenance et cohérence
-Au début d'une tâche, lire L0 et l'index, puis L1 et éventuellement L2 des composants pertinents. Noter la révision GitHub lue si disponible. Si une source ChatGPT diffère de GitHub, signaler l'écart : ne pas synchroniser silencieusement. En cas de contradiction métier ou d'architecture, ne pas remplacer une décision validée sans arbitrage. Éviter les écritures simultanées concurrentes ; relire l'état avant remplacement.
+Au début d'une tâche, lire L0 et l'index, puis L1 et éventuellement L2 des composants pertinents. Résoudre les chemins du manifeste et de l'index depuis la racine du workspace, les liens Markdown depuis leur fichier source. Si un chemin échoue, rechercher le chemin réel dans l'arborescence de la branche lue avant d'affirmer que le document est absent. Recouper `CURRENT_STATE.md`, `DECISIONS.md` et l'index ; un état périmé ne doit pas masquer un composant ou une décision persistée. Noter la révision GitHub lue si disponible. Si une source ChatGPT diffère de GitHub, signaler l'écart : ne pas synchroniser silencieusement. En cas de contradiction métier ou d'architecture, ne pas remplacer une décision validée sans arbitrage. Éviter les écritures simultanées concurrentes ; relire l'état avant remplacement.
 
 ## Santé du contexte
 Sur « Audit contexte », évaluer qualitativement :
@@ -37,3 +37,14 @@ Produire une synthèse structurée des objectifs, sources, décisions validées,
 
 ## Publication
 Ne pas restructurer ni migrer automatiquement un workspace existant. Vérifier chaque écriture ; conserver les versions et les preuves. Faire approuver les décisions structurantes. Ne pas publier automatiquement les documents métier ni les secrets.
+
+### Publication cohérente d'un composant — règle opérationnelle
+Quand une création ou évolution de composant touche plusieurs fichiers (artefact, `STATE.md`, `HISTORY.md`, `components/index.yaml`, `docs/CURRENT_STATE.md`), préparer l'ensemble avant écriture et privilégier **un seul commit Git**. N'inclure que les fichiers réellement modifiés. Un ensemble de `create_file`/`update_file` successifs peut laisser des états intermédiaires incohérents ; ne pas qualifier une série de commits de publication atomique.
+
+1. Lire le **SHA de commit HEAD** de la branche cible (`H0`) et son **SHA d'arbre** ; ne pas confondre les deux. Vérifier les chemins actuels et les références L0/L1/L2.
+2. Préparer les contenus complets, vérifier identifiants, statuts, dépendances, chemins, version et preuves de test ; demander l'autorisation d'écriture si nécessaire.
+3. Créer les blobs et un nouvel arbre basé sur l'arbre de `H0`, puis un commit `C1` ayant `H0` pour parent. À ce stade, la branche n'est pas publiée.
+4. Vérifier que le HEAD de la branche vaut toujours `H0`. Déplacer la référence vers `C1` **sans force**, avec condition sur le HEAD attendu quand l'API le permet ; en cas de conflit, arrêter, relire et reconstruire sans écraser.
+5. Relire le nouveau HEAD, le commit réellement publié et les chemins modifiés ; vérifier le contenu et la cohérence de l'ensemble avant d'annoncer le succès. Ne jamais attribuer à un commit des fichiers créés dans d'autres commits.
+
+**Échec / reprise :** blobs, arbre ou commit créés sans déplacement de référence ne constituent pas une publication visible ; vérifier le HEAD avant de reprendre. Si la référence a déjà avancé, examiner ce qui est réellement publié avant toute nouvelle écriture (reprise idempotente). Après publication d'un contenu incorrect, produire un nouveau commit correctif autorisé, sans réécrire l'historique. Si l'API ne permet pas le commit unique ou le contrôle du HEAD attendu, signaler la limite, obtenir l'accord pour une publication séquentielle et en tracer les étapes/risques. Une publication Git réussie ne prouve pas un test dans Power Apps Studio.
