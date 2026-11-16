@@ -32,6 +32,13 @@ Lors du premier message dans un projet ChatGPT (même « bonjour »), les instru
 
 L'objectif est de supprimer le prompt initial obligatoire, pas l'accord préalable aux écritures. Le comportement reste à recetter sur projet ChatGPT vierge et projet existant.
 
+## Acquisition guidée des sources métier après bootstrap
+Après initialisation ou reprise, inviter explicitement le développeur à déposer ses CDC, maquettes, spécifications et références dans **Sources** > **Ajouter des fichiers** du projet ChatGPT, puis à revenir à la conversation. Si les documents sont déjà disponibles, ne pas redemander. Sans document, proposer un cadrage progressif non bloquant.
+
+Avant analyse, vérifier l'accessibilité réelle, identifier les références, leur rôle, leur priorité et les contradictions éventuelles ; ne jamais prétendre avoir lu un document inaccessible. Conserver la demande initiale et y revenir.
+
+Les Sources ChatGPT accueillent les références métier ; GitHub privé conserve configuration, décisions, états et livrables techniques. Pas de synchronisation ni de copie automatique. Un inventaire documentaire minimal peut être proposé sans dupliquer le contenu ni présumer sa validation ; toute écriture GitHub exige l'autorisation applicable.
+
 ## Pré-vol obligatoire des modèles
 Avant même de présenter la structure proposée, lire depuis la branche cible les trois modèles `methodology/templates/PROJECT_CONFIG.template.yaml`, `PROJECT_MANIFEST.template.yaml` et `COMPONENT_INDEX.template.yaml`. Leurs noms, clés, chemins et versions font autorité. Ne pas improviser un dossier `memory/`, des fichiers `L0_PROJECT_STATE.md` ou `L0_DECISIONS.md`, ni un champ `projectName`. Si un modèle n'est pas accessible, suspendre la proposition d'initialisation. Ne créer aucun fichier avant autorisation explicite.
 
