@@ -1,15 +1,15 @@
 schemaVersion: 1
 release: 0.8.0-stabilized
 sourceRepository: mohbsikri/imhotep-pp-core
-sourceCommit: 41f377de1d71aabcb23f3500d0af027eeb0ee6d9
+sourceCommit: bc5a6c83b2cdb5c6325fd5068774cdd160efa300
 distributionRepository: mohbsikri/imhotep-distribution
 files:
   - path: "IMHOTEP_INSTRUCTIONS.txt"
-    sha256: "2fbc887cecee8e2711740d28a7c2c8883fced3e39f614f47e678868275368214"
+    sha256: "41d78901a0ddcd4cd90ad0be7a7ce49fb5d112a2011bf18aef007f36fbf95ca6"
   - path: "README.md"
     sha256: "b8726101ee5e9f542bf7976decb2ac6b713da741e909a6397785ab0460d08b53"
   - path: "methodology/BOOTSTRAP_V0.8.md"
-    sha256: "51bce66a15c9e0e9c3948bfdffd755058a34ab3acf9d0f19e1bdd96f771b92e0"
+    sha256: "5d45c4499ee240bbe81ac48a45142b347d2e4aad773a2f73c2a0769bbb530cc4"
   - path: "methodology/README.md"
     sha256: "f25a88ef21e4cb8f5a9670cb01aea0407e55d4f3791d9e11d0b2f45e1e4353d1"
   - path: "methodology/TEST_PLAN_V0.8.md"
@@ -19,11 +19,11 @@ files:
   - path: "methodology/catalog/README.md"
     sha256: "c08d97aed0810a3893f43430bb1162cd7b4b04c65323da378c6d63caa847640d"
   - path: "methodology/instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt"
-    sha256: "2fbc887cecee8e2711740d28a7c2c8883fced3e39f614f47e678868275368214"
+    sha256: "41d78901a0ddcd4cd90ad0be7a7ce49fb5d112a2011bf18aef007f36fbf95ca6"
   - path: "methodology/standards/README.md"
     sha256: "b3fb71b6ce3abd7b16511c32a6441809126e825c68c070b91f89f5c3a89c9263"
   - path: "methodology/standards/STD-01_DEVELOPMENT_CYCLE.md"
-    sha256: "dca180336bb25c3b38f5aadf608fcb5398695eba6a7dc14fbacbe7afafb80188"
+    sha256: "e4858cb97d2e84770e06e8cc15b8a4fce7c6e5458c507dfe1ee3f0ca4f5e36f4"
   - path: "methodology/standards/STD-02_POWER_PLATFORM_TECHNICAL.md"
     sha256: "6fba087f60f5cba54ef6b88492099ad3c255c7551509d4db7fb95c44d03e0c98"
   - path: "methodology/standards/STD-03_KNOWLEDGE_CAPITALIZATION.md"

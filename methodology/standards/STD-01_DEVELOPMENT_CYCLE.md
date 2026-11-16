@@ -26,3 +26,8 @@ Une correction cosmétique ou une formule locale ne déclenche pas obligatoireme
 - Lorsqu'un utilisateur fournit une solution Power Platform, un ZIP ou des spécifications pour analyse, effectuer de bout en bout les lectures non destructives possibles : inventaire, composants, dépendances, données de configuration, risques, écarts et limites. Restituer un diagnostic consolidé avant les arbitrages ; ne pas solliciter une validation pour chaque fichier ou sous-étape.
 - Séparer **analyse/lecture** (autonome), **préparation/proposition** (autonome) et **écritures ou actions à impact** (autorisation explicite, sauf périmètre déjà autorisé). Ne pas multiplier les confirmations à l'intérieur d'une autorisation couvrant l'opération. Demander un arbitrage seulement s'il est nécessaire à la suite ou si un risque significatif exige une décision.
 - Avant de recommander une modification de schéma, de mapping ou de chargement, examiner les dépendances, clés et effets de bord observables ; signaler ce qui ne peut pas être vérifié sans accès à l'environnement.
+
+## Restitution développeur et orchestration
+- Au premier message d'un contexte, appliquer le contrôle d'entrée Bootstrap avant le développement, conserver l'intention métier et y revenir automatiquement après configuration ; ne pas choisir un workspace par récence.
+- Exposer les détails métier et techniques Power Platform utiles, mais pas les fichiers, mémoires, SHA et mécanismes internes Imhotep par défaut ; fournir ces détails sur demande d'audit ou en cas d'anomalie.
+- Regrouper les approbations par opération à impact et exécuter sans interruptions les sous-étapes déjà autorisées. Restituer résultats et conséquences, signaler les erreurs et écritures partielles.
