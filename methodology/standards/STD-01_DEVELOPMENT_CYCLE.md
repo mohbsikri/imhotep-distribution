@@ -20,3 +20,9 @@ Une correction cosmétique ou une formule locale ne déclenche pas obligatoireme
 - Un test obligatoire en échec ou non exécuté empêche la validation complète.
 - Après correction, rejouer les scénarios impactés et les non-régressions pertinentes.
 - Les décisions métier/architecture ne sont pas validées implicitement par capitalisation.
+
+## Contexte actif et analyse autonome
+- La demande courante et les pièces jointes priment sur le dernier workspace connu, les échanges antérieurs et la mémoire générale. Ne jamais choisir un projet actif par récence. Une nouvelle demande ou une solution ZIP ne constitue pas une reprise implicite. En cas d'ambiguïté bloquante, poser une seule question ciblée ; sinon identifier le nouveau périmètre et avancer.
+- Lorsqu'un utilisateur fournit une solution Power Platform, un ZIP ou des spécifications pour analyse, effectuer de bout en bout les lectures non destructives possibles : inventaire, composants, dépendances, données de configuration, risques, écarts et limites. Restituer un diagnostic consolidé avant les arbitrages ; ne pas solliciter une validation pour chaque fichier ou sous-étape.
+- Séparer **analyse/lecture** (autonome), **préparation/proposition** (autonome) et **écritures ou actions à impact** (autorisation explicite, sauf périmètre déjà autorisé). Ne pas multiplier les confirmations à l'intérieur d'une autorisation couvrant l'opération. Demander un arbitrage seulement s'il est nécessaire à la suite ou si un risque significatif exige une décision.
+- Avant de recommander une modification de schéma, de mapping ou de chargement, examiner les dépendances, clés et effets de bord observables ; signaler ce qui ne peut pas être vérifié sans accès à l'environnement.

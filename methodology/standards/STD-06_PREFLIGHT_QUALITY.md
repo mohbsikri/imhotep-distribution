@@ -28,3 +28,8 @@ Pour les contrôles pertinents : **Conforme statiquement**, **À corriger**, **N
 
 ## Limites
 Une inspection par modèle n'est ni un parseur YAML, ni un compilateur Power Fx, ni un test Studio, Dataverse ou Power Automate. Ne pas déclarer « compilé », « exécuté » ou « validé » sans preuve. Aucun outil local, PAC CLI ou exécution autonome n'est requis.
+
+## Analyse de solution importée et interruptions
+- Pour un ZIP de solution Power Platform, parcourir les artefacts accessibles et consolider inventaire, composants, dépendances, schémas, connexions, variables d'environnement, références et limites de l'analyse hors environnement. Distinguer éléments observés, hypothèses et validations à faire dans Power Platform.
+- Ne pas interrompre une inspection non destructive pour demander l'autorisation de lire chaque fichier. Ne pas présenter une analyse partielle comme exhaustive ; signaler les fichiers illisibles, manquants ou non inspectés.
+- Vérifier que le projet actif est fondé sur la demande et les sources courantes, et non sur un ancien workspace récupéré par mémoire.

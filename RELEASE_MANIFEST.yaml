@@ -1,11 +1,11 @@
 schemaVersion: 1
 release: 0.8.0-stabilized
 sourceRepository: mohbsikri/imhotep-pp-core
-sourceCommit: 6fdcba206befea02ebbdf262c2b490d9623dc42d
+sourceCommit: 41f377de1d71aabcb23f3500d0af027eeb0ee6d9
 distributionRepository: mohbsikri/imhotep-distribution
 files:
   - path: "IMHOTEP_INSTRUCTIONS.txt"
-    sha256: "d6fd006c20654722136127a8f89c03a7efd404f4d1978be7a7913ca7f09312b3"
+    sha256: "2fbc887cecee8e2711740d28a7c2c8883fced3e39f614f47e678868275368214"
   - path: "README.md"
     sha256: "b8726101ee5e9f542bf7976decb2ac6b713da741e909a6397785ab0460d08b53"
   - path: "methodology/BOOTSTRAP_V0.8.md"
@@ -19,11 +19,11 @@ files:
   - path: "methodology/catalog/README.md"
     sha256: "c08d97aed0810a3893f43430bb1162cd7b4b04c65323da378c6d63caa847640d"
   - path: "methodology/instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt"
-    sha256: "d6fd006c20654722136127a8f89c03a7efd404f4d1978be7a7913ca7f09312b3"
+    sha256: "2fbc887cecee8e2711740d28a7c2c8883fced3e39f614f47e678868275368214"
   - path: "methodology/standards/README.md"
     sha256: "b3fb71b6ce3abd7b16511c32a6441809126e825c68c070b91f89f5c3a89c9263"
   - path: "methodology/standards/STD-01_DEVELOPMENT_CYCLE.md"
-    sha256: "21be138f3d041bab247f720218a57e33f7b75de898096bd7e39dad34a692cbb5"
+    sha256: "dca180336bb25c3b38f5aadf608fcb5398695eba6a7dc14fbacbe7afafb80188"
   - path: "methodology/standards/STD-02_POWER_PLATFORM_TECHNICAL.md"
     sha256: "6fba087f60f5cba54ef6b88492099ad3c255c7551509d4db7fb95c44d03e0c98"
   - path: "methodology/standards/STD-03_KNOWLEDGE_CAPITALIZATION.md"
@@ -33,7 +33,7 @@ files:
   - path: "methodology/standards/STD-05_INTERACTIVE_ACCEPTANCE.md"
     sha256: "87a8b0dfc131ae981369d037523cdb0e8bc55f085c55188d237cf116018c5c26"
   - path: "methodology/standards/STD-06_PREFLIGHT_QUALITY.md"
-    sha256: "ea151813164a8d051c36e35afbe5978c6dc1d409a4eac78a7d456ee4a8982577"
+    sha256: "a34d4351ed76787ba78a51f810645335b6a61d0c849d1d1b9e0164c40e6c1c1d"
   - path: "methodology/standards/STD-07_COMPONENT_CATALOG_VERSIONING.md"
     sha256: "b94d81b8ec14aab88c0f748d2de08402fee73f23c015910edbbdb905407a4b3c"
   - path: "methodology/standards/STD-08_DIAGNOSTIC_IMPACT.md"
