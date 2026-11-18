@@ -186,3 +186,20 @@ Source : compte rendu et confirmations explicites du développeur, dans un autre
 | Écriture GitHub pendant le test | Aucune selon le compte rendu externe | Non auditée indépendamment |
 
 **Décision de recette :** intégration Canvas et parcours principal validés sur retour utilisateur ; anomalie de formatage capitalisée dans STD-02/06. La recette est **fonctionnelle principale réussie, non exhaustive**. Cette validation n'autorise ni fusion vers `main` ni certification générale des formats Power Fx.
+
+## INC-IMHOTEP-001 — Installation externe Pelin (18/11/2026)
+Compte rendu externe transmis par le développeur : dépôt privé `pelomutlu/imhotep-pp-core`, 20 fichiers `methodology/` installés par préparation fractionnée de blobs, publication unique commit `3f8cfb664c55dc55f19a1cdfc34179f206495399`, 20/20 SHA Git vérifiés, README préservé, HEAD final relu, contrôle d'idempotence en lecture seule réussi. Le workspace `bioscope-conteneur` a ensuite été initialisé et le parcours a atteint les sources métier (retour utilisateur). Ces constats sont issus du rapport de l'autre assistant ; ne pas les présenter comme une nouvelle vérification indépendante.
+
+L'installation a nécessité plusieurs relances conversationnelles : **le succès final ne valide pas l'autonomie du bootstrap initial**. Le mécanisme robuste ajouté dans la révision 0.8.1 reste à tester sur une nouvelle installation.
+
+### Recette obligatoire de la révision 0.8.1
+- R01 : dépôt privé neuf, branche et README préservés, 20/20 fichiers publiés.
+- R02 : SHA-256 contrôlés avant publication, SHA Git relus après publication.
+- R03 : traitement par lots sans confirmations intermédiaires, reprise après interruption.
+- R04 : relance sur dépôt déjà conforme, zéro écriture.
+- R05 : divergence sur fichier existant, arrêt sans écrasement.
+- R06 : HEAD concurrent, refus de publication sans force.
+- R07 : workspace créé avec exactement cinq fichiers après autorisation distincte.
+- R08 : orientation vers les sources métier sans les copier automatiquement dans GitHub.
+
+Pour chaque test : `Réussi / Échec / Non testé`, preuve GitHub et limites. Ne pas considérer la seule rédaction du protocole comme validation fonctionnelle.
