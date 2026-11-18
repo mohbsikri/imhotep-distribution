@@ -1,6 +1,6 @@
-# Méthodologie Power Platform / ChatGPT — V0.8 candidate
+# Méthodologie Power Platform / ChatGPT — V0.8 stabilized
 
-**Statut : candidate, non validée fonctionnellement.** La branche `main` et les versions antérieures restent inchangées.
+**Statut de distribution : 0.8.0-stabilized.** Les tests méthodologiques documentés ne valent pas validation universelle des composants Canvas, Dataverse ou de tous les scénarios GitHub.
 
 ## Architecture
 Un dépôt GitHub privé **par développeur**, plusieurs solutions sous `workspaces/<projectId>/`, et des règles partagées dans `methodology/`. Un projet ChatGPT correspond à une solution fonctionnelle, qui peut contenir plusieurs technologies et composants.
@@ -24,7 +24,7 @@ Aucun YAML de configuration à écrire manuellement. Si GitHub est indisponible,
 Les workspaces historiques restent en place, sans migration automatique. Leur manifeste peut utiliser une ancienne interprétation de L1/L2 ; la nouvelle structure n'est appliquée qu'après analyse et accord. Ne pas écraser des données ou des décisions existantes.
 
 ## Vérification
-La candidate doit réussir un test d'initialisation sur workspace fictif, puis une reprise sans écrasement, avant proposition de validation. Les tests Studio et Dataverse restent distincts.
+La méthodologie doit réussir un test d'initialisation sur workspace fictif, puis une reprise sans écrasement, avant proposition de validation. Les tests Studio et Dataverse restent distincts.
 
 ## Dépôts et références
 Le dépôt public `mohbsikri/imhotep-distribution` distribue une version identifiée par manifeste et commit. Le dépôt privé `imhotep-pp-core` est le dépôt de travail. `power-platform-ai-methodology` et sa branche candidate sont des références historiques de tests, pas le workspace opérationnel.

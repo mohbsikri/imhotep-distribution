@@ -1,25 +1,25 @@
 schemaVersion: 1
-release: 0.8.0-stabilized
+release: 0.8.1
 sourceRepository: mohbsikri/imhotep-pp-core
 sourceCommit: 5140fe2253152f031e4898e4c01864122b0c6f81
 distributionRepository: mohbsikri/imhotep-distribution
 files:
   - path: "IMHOTEP_INSTRUCTIONS.txt"
-    sha256: "e84a4a49d418aab87f53d038e992cd27e6968bb3c8244b618e106f71aeb63cb7"
+    sha256: "343a4d660030c0390fa98a027d9e67eeb3e15588e3d98ce9028910100071f061"
   - path: "README.md"
-    sha256: "b8726101ee5e9f542bf7976decb2ac6b713da741e909a6397785ab0460d08b53"
+    sha256: "8109498ec5e05de7d7ebd0cc020f22807f6a681af4e65f5ab29172698d199298"
   - path: "methodology/BOOTSTRAP_V0.8.md"
-    sha256: "239671a9bdd7a398ad823de63981364fe7bc38561ddb935e8d8b842c76054af9"
+    sha256: "ceef4e99313b4af234115839ad8287647af32344188eb63411ace59b60cae77d"
   - path: "methodology/README.md"
-    sha256: "f25a88ef21e4cb8f5a9670cb01aea0407e55d4f3791d9e11d0b2f45e1e4353d1"
+    sha256: "bd0d96c219a5258c3f191cece58e9f4fee7cb6e70eeb7d31268d9b4165638742"
   - path: "methodology/TEST_PLAN_V0.8.md"
-    sha256: "11b6d289512464519e3f8e1eda26df7bd4a9eef33586e4f6dde9346a054aa60d"
+    sha256: "b4da74474ce7a7ab06ce5256bfb4ae67d1330458ab5bfcf770e3bd5ee19417a4"
   - path: "methodology/V0.8_DECISIONS.md"
     sha256: "2e01e2ff97a32b7578b746afdb8094579da80f6af2205b2d716ed6a315a7c83c"
   - path: "methodology/catalog/README.md"
     sha256: "c08d97aed0810a3893f43430bb1162cd7b4b04c65323da378c6d63caa847640d"
   - path: "methodology/instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt"
-    sha256: "e84a4a49d418aab87f53d038e992cd27e6968bb3c8244b618e106f71aeb63cb7"
+    sha256: "343a4d660030c0390fa98a027d9e67eeb3e15588e3d98ce9028910100071f061"
   - path: "methodology/standards/README.md"
     sha256: "b3fb71b6ce3abd7b16511c32a6441809126e825c68c070b91f89f5c3a89c9263"
   - path: "methodology/standards/STD-01_DEVELOPMENT_CYCLE.md"
@@ -47,4 +47,4 @@ files:
   - path: "methodology/templates/PROJECT_CONFIG.template.yaml"
     sha256: "9feb8cd9da12490b57ff6ca15fe128078cc42531f5b65046e30c7493b13e29fc"
   - path: "methodology/templates/PROJECT_MANIFEST.template.yaml"
-    sha256: "c030c7d5cf33f26ef05b77d2e391acfdffd8052c28fde98a06082ca91b93660a"
+    sha256: "9a184061527aa8965af6f51243139f7f1e6eb8a088d808b056e2cf9912871903"

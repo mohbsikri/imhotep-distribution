@@ -1,6 +1,6 @@
 schemaVersion: '1.1'
 projectId: '<project-id>'
-methodologyVersion: '0.8.0-candidate'
+methodologyVersion: '0.8.1'
 configPath: 'PROJECT_CONFIG.yaml'
 context:
   L0:
