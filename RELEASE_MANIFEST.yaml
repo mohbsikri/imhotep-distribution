@@ -19,7 +19,7 @@ files:
   - path: "methodology/catalog/README.md"
     sha256: "c08d97aed0810a3893f43430bb1162cd7b4b04c65323da378c6d63caa847640d"
   - path: "methodology/instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt"
-    sha256: "e84a4a49d418aab87f53d038e992cd27e6968bb3c8244b618e106f71aeb63cb7"
+    sha256: "343a4d660030c0390fa98a027d9e67eeb3e15588e3d98ce9028910100071f061"
   - path: "methodology/standards/README.md"
     sha256: "b3fb71b6ce3abd7b16511c32a6441809126e825c68c070b91f89f5c3a89c9263"
   - path: "methodology/standards/STD-01_DEVELOPMENT_CYCLE.md"
