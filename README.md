@@ -19,5 +19,7 @@ La branche `main` peut évoluer. Pour une installation reproductible, Imhotep do
 
 Les projets métier et les workspaces restent exclusivement dans les dépôts privés des utilisateurs.
 
-## Installation robuste — version 0.8.1
+## Installation robuste — version 0.8.2
 La procédure détaillée est dans `methodology/BOOTSTRAP_V0.8.md`. L'assistant vérifie les empreintes par petits lots, prépare les blobs Git, conserve un inventaire de reprise, puis publie en un commit sans écrasement. Une interruption peut nécessiter une reprise conversationnelle ; aucune exécution continue n'est garantie. L'initialisation du premier workspace intervient séparément après autorisation. Toujours figer le commit de distribution et vérifier `RELEASE_MANIFEST.yaml` avant installation.
+
+Les instructions du projet ChatGPT sont limitées à 8 000 caractères ; la révision 0.8.2 contient un fichier de 6 415 caractères. Les procédures détaillées restent dans methodology/.

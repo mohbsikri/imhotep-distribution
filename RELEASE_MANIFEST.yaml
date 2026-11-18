@@ -1,17 +1,17 @@
 schemaVersion: 1
-release: 0.8.1
+release: 0.8.2
 sourceRepository: mohbsikri/imhotep-pp-core
 sourceCommit: 5140fe2253152f031e4898e4c01864122b0c6f81
 distributionRepository: mohbsikri/imhotep-distribution
 files:
   - path: "IMHOTEP_INSTRUCTIONS.txt"
-    sha256: "343a4d660030c0390fa98a027d9e67eeb3e15588e3d98ce9028910100071f061"
+    sha256: "217ca31b4a9a48b2cc0257159ff1672af5403566af189c2844d86fa7a44b9dbb"
   - path: "README.md"
-    sha256: "8109498ec5e05de7d7ebd0cc020f22807f6a681af4e65f5ab29172698d199298"
+    sha256: "1d795da91bfb8f400d6b5c73d9a847e18ca6bcabde3a5d9f198992a1c30483a6"
   - path: "methodology/BOOTSTRAP_V0.8.md"
     sha256: "ceef4e99313b4af234115839ad8287647af32344188eb63411ace59b60cae77d"
   - path: "methodology/README.md"
-    sha256: "bd0d96c219a5258c3f191cece58e9f4fee7cb6e70eeb7d31268d9b4165638742"
+    sha256: "9dbdbe600d4437c6a592f3bf3fb42a917ec54433a7d9462154832a0a4be04d86"
   - path: "methodology/TEST_PLAN_V0.8.md"
     sha256: "b4da74474ce7a7ab06ce5256bfb4ae67d1330458ab5bfcf770e3bd5ee19417a4"
   - path: "methodology/V0.8_DECISIONS.md"
@@ -19,7 +19,7 @@ files:
   - path: "methodology/catalog/README.md"
     sha256: "c08d97aed0810a3893f43430bb1162cd7b4b04c65323da378c6d63caa847640d"
   - path: "methodology/instructions/IMHOTEP_CHATGPT_PROJECT_INSTRUCTIONS_V0.8.txt"
-    sha256: "343a4d660030c0390fa98a027d9e67eeb3e15588e3d98ce9028910100071f061"
+    sha256: "217ca31b4a9a48b2cc0257159ff1672af5403566af189c2844d86fa7a44b9dbb"
   - path: "methodology/standards/README.md"
     sha256: "b3fb71b6ce3abd7b16511c32a6441809126e825c68c070b91f89f5c3a89c9263"
   - path: "methodology/standards/STD-01_DEVELOPMENT_CYCLE.md"
@@ -47,4 +47,4 @@ files:
   - path: "methodology/templates/PROJECT_CONFIG.template.yaml"
     sha256: "9feb8cd9da12490b57ff6ca15fe128078cc42531f5b65046e30c7493b13e29fc"
   - path: "methodology/templates/PROJECT_MANIFEST.template.yaml"
-    sha256: "9a184061527aa8965af6f51243139f7f1e6eb8a088d808b056e2cf9912871903"
+    sha256: "98921a20de235c2e52d9edb491be55499c3c0a9049eda597edf832b565ec6cfc"
