@@ -1,6 +1,6 @@
 # Méthodologie Power Platform / ChatGPT — V0.8 stabilized
 
-**Statut de distribution : 0.8.0-stabilized.** Les tests méthodologiques documentés ne valent pas validation universelle des composants Canvas, Dataverse ou de tous les scénarios GitHub.
+**Statut de distribution : 0.8.2.** Les tests méthodologiques documentés ne valent pas validation universelle des composants Canvas, Dataverse ou de tous les scénarios GitHub.
 
 ## Architecture
 Un dépôt GitHub privé **par développeur**, plusieurs solutions sous `workspaces/<projectId>/`, et des règles partagées dans `methodology/`. Un projet ChatGPT correspond à une solution fonctionnelle, qui peut contenir plusieurs technologies et composants.
